@@ -1,0 +1,13 @@
+
+# Fichiers sensibles
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Dépendances et fichiers locaux
+node_modules/
+.DS_Store

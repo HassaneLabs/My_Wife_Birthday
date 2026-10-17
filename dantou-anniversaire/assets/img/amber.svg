@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 310" role="img" aria-labelledby="title desc">
+<title id="title">Amber, archère de l'amour</title><desc id="desc">Illustration originale : une archère souriante, aux cheveux bruns et au ruban rouge, tend son bras vers un arc.</desc>
+<defs><linearGradient id="hair" x2="1" y2="1"><stop stop-color="#573529"/><stop offset="1" stop-color="#2e1d22"/></linearGradient><linearGradient id="cape" x2=".7" y2="1"><stop stop-color="#c96555"/><stop offset="1" stop-color="#772f3c"/></linearGradient><linearGradient id="gold"><stop stop-color="#e9cf94"/><stop offset="1" stop-color="#b07f47"/></linearGradient></defs>
+<!-- Ruban, cheveux, cape et silhouette dessinés spécialement pour ce cadeau. -->
+<ellipse cx="98" cy="296" rx="70" ry="9" fill="#130e17" opacity=".5"/>
+<path d="M66 152Q39 184 29 246L76 238 119 260 144 230Q137 174 111 151Z" fill="url(#cape)"/>
+<path d="M69 169Q48 202 38 236L75 225 113 248 132 222" fill="none" stroke="#dbb980" stroke-width="2" opacity=".65"/>
+<path d="M79 220L74 267 65 287Q63 294 76 295L92 288 99 225M103 220L113 263 113 286Q112 294 125 294L139 290 136 279 125 222" fill="#33252d" stroke="#231c24" stroke-width="2"/>
+<path d="M77 237L94 240M114 238L129 235" stroke="url(#gold)" stroke-width="5"/>
+<path d="M63 92Q45 48 75 31Q98 16 121 38 154 55 133 113L146 176Q112 193 66 163Z" fill="url(#hair)"/>
+<path d="M59 54L56 9Q70 4 84 50M101 43L124 5Q138 9 122 58" fill="#b64f4b" stroke="#dba17a" stroke-width="2"/>
+<path d="M63 43L63 18 75 43M111 40L126 16 120 46" stroke="#f1b99a" stroke-width="3" fill="none"/>
+<path d="M80 113L81 134 106 135 104 112" fill="#e9ad89"/>
+<path d="M60 68Q64 42 91 43 126 46 127 79L116 108Q96 132 73 110Z" fill="#f2c2a2"/>
+<path d="M56 79Q51 45 84 38 120 34 129 73L110 66 105 52Q80 79 57 87Z" fill="url(#hair)"/>
+<path d="M55 62Q82 33 121 53" stroke="#b44d49" stroke-width="9" fill="none"/>
+<g fill="#5c3930" stroke="#daba82" stroke-width="3"><ellipse cx="75" cy="54" rx="11" ry="7" transform="rotate(-13 75 54)"/><ellipse cx="102" cy="52" rx="11" ry="7" transform="rotate(8 102 52)"/></g>
+<path d="M74 86Q79 82 84 86M101 84Q106 80 111 84" stroke="#4d302f" stroke-width="2" stroke-linecap="round" fill="none"/>
+<path d="M85 102Q94 111 103 101" fill="#bd655b"/><ellipse cx="73" cy="96" rx="6" ry="3" fill="#df8a7e" opacity=".5"/><ellipse cx="111" cy="94" rx="6" ry="3" fill="#df8a7e" opacity=".5"/>
+<path d="M77 126L62 142 62 175 71 198 119 198 125 155 106 126 94 139Z" fill="#ab4945" stroke="#d09c66" stroke-width="1.5"/>
+<path d="M84 129L94 140 103 129M75 147L110 147M91 141L91 178" stroke="url(#gold)" stroke-width="3"/>
+<path d="M72 181L121 181 131 216Q98 235 68 217Z" fill="#4b3437"/><path d="M80 182L84 225M109 183L111 226" stroke="#c59265" stroke-width="2"/>
+<path d="M66 141Q51 148 46 178L73 194 80 182 63 171 79 148" fill="#f2c2a2"/>
+<path d="M44 176L63 170 78 181 69 197Z" fill="#77373a" stroke="#dcaf7c" stroke-width="2"/>
+<path d="M111 139Q120 133 132 145L151 159 180 158 181 171 148 177 118 163Z" fill="#f2c2a2"/>
+<path d="M114 137L127 139 141 151 130 166 116 157Z" fill="#b54c48" stroke="#d8b17c" stroke-width="2"/>
+<path d="M158 155L174 155 177 172 159 176Z" fill="#71333a" stroke="#d8b17c" stroke-width="2"/>
+<path d="M174 160Q187 153 192 161L189 171 176 172" fill="#efbc96"/>
+<path d="M61 97Q49 112 53 147M123 84Q138 132 125 169" stroke="#75503a" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M91 171l5-7 5 7-5 7Z" fill="#e5bf81"/>
+</svg>

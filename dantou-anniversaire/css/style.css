@@ -1,0 +1,239 @@
+/* Identité : nuit prune, papier ivoire et or doux. Toutes les polices sont locales. */
+:root{--bg:#241820;--bg-deep:#1d151e;--cream:#f3e9db;--gold:#d9b77c;--muted:#b5a4ae;--pink:#d89caa;--paper:#f3ede1;--ink:#493337;--line:rgba(218,186,132,.15);--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--hand:'Caveat','Segoe Print',cursive;--radius:5px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:var(--sans);font-size:14px;line-height:1.6;min-height:100vh;isolation:isolate}
+body:before{content:"";position:fixed;inset:0;z-index:-2;pointer-events:none;background:radial-gradient(ellipse at 50% 36%,rgba(128,65,90,.18),transparent 63%),linear-gradient(145deg,#2c1d28 0%,#231821 55%,#1e1720 100%)}
+body:after{content:"";position:fixed;inset:0;z-index:9;pointer-events:none;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.8' filter='url(%23noise)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+button,a{-webkit-tap-highlight-color:transparent}
+button:disabled{cursor:default}
+img,svg{display:block;max-width:100%}
+button:focus-visible,a:focus-visible,audio:focus-visible{outline:2px solid var(--gold);outline-offset:6px}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip-link{position:fixed;left:12px;top:12px;z-index:30;padding:10px 20px;background:var(--paper);color:var(--ink);transform:translateY(-160%)}
+.skip-link:focus{transform:translateY(0)}
+.stars{position:fixed;inset:0;pointer-events:none;z-index:-1;overflow:hidden}
+.star{position:absolute;width:2px;height:2px;border-radius:50%;background:#e5cb9c;opacity:.32;animation:twinkle 7s ease-in-out infinite}
+@keyframes twinkle{50%{opacity:.1}}
+.site-header{max-width:1280px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:26px 42px;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--serif);font-size:26px;font-weight:500;display:flex;align-items:center;gap:12px;white-space:nowrap;line-height:1}
+.brand-dot{color:var(--gold)}
+.brand-symbol{width:34px;height:34px;color:var(--gold);border:1px solid var(--line);border-radius:50%;display:grid;place-items:center}
+.brand-symbol svg{width:19px}
+.main-nav{display:flex;gap:8px}
+.main-nav a{font-size:11px;padding:10px 17px;color:var(--muted);border:1px solid transparent;border-radius:50px;transition:color .2s,background .2s,border-color .2s}
+.main-nav a:hover{color:var(--cream)}
+.main-nav a[aria-current]{background:rgba(217,183,124,.07);border-color:rgba(217,183,124,.2);color:var(--gold)}
+.nav-number{font-size:9px;margin-right:5px;opacity:.65}
+.header-date{font-size:10px;letter-spacing:2px;color:var(--muted)}
+.hero{text-align:center;position:relative;padding:52px 20px 10px}
+.eyebrow{color:var(--gold);font-size:9px;letter-spacing:2.7px;font-weight:500;margin:0 0 19px;text-transform:uppercase}
+.tiny-star{font-size:13px;margin-right:7px}
+h1{font-family:var(--serif);font-size:clamp(48px,5.7vw,80px);font-weight:400;line-height:1.02;letter-spacing:-1.7px;margin:0 0 22px}
+h1 em,h2 em{color:var(--gold);font-weight:400}
+.hero-description{font-size:12px;line-height:1.9;color:#c3b3bc;margin:0}
+.hero-description span{color:#a798a2}
+.home-main{max-width:1180px;margin:auto;background:url('../assets/img/constellation.svg') no-repeat center 125px;background-size:1060px auto}
+.shooting-game{max-width:970px;margin:0 auto;position:relative}
+.game-scene{height:327px;position:relative;isolation:isolate}
+.game-scene:before{content:"";position:absolute;width:62%;height:110%;right:0;top:-12%;pointer-events:none;background:radial-gradient(ellipse,rgba(165,93,115,.12),transparent 66%)}
+.amber-wrap{position:absolute;left:7.3%;bottom:18px;width:158px;z-index:2;pointer-events:none}
+.amber-wrap img{width:100%;height:auto;filter:drop-shadow(0 8px 15px rgba(0,0,0,.18));transform:rotate(-2deg)}
+.amber-label{display:block;text-align:center;color:var(--gold);font-size:8px;letter-spacing:2px;margin-top:8px}
+.amber-label i{font-family:var(--serif);font-size:13px;font-style:italic;letter-spacing:.2px;color:var(--muted);display:block;margin-top:1px}
+.bow-control{position:absolute;left:23%;top:54%;transform:translate(-50%,-50%);width:80px;height:156px;z-index:5;border:0;background:none;padding:0;touch-action:none;user-select:none;-webkit-user-select:none;cursor:grab;border-radius:40px}
+.bow-control:active{cursor:grabbing}
+.bow-control svg{width:100%;height:100%;overflow:visible;filter:drop-shadow(0 0 4px rgba(219,180,116,.12))}
+.bow-limb{transition:stroke .2s}
+.bow-control:hover .bow-limb{stroke:#ffe2ad}
+.envelope-target{position:absolute;left:65%;top:45%;transform:translate(-50%,-50%);width:264px;z-index:3;text-align:center}
+.gift-caption{font-size:8px;letter-spacing:2.5px;color:var(--gold);margin:0 0 24px;opacity:.65}
+.envelope{width:264px;height:163px;position:relative;perspective:800px;filter:drop-shadow(0 20px 30px rgba(13,8,14,.24));transform:rotate(-5deg)}
+.envelope-back{position:absolute;inset:0;background:#ddc6ad;border-radius:4px}
+.envelope-front{position:absolute;inset:0;border-radius:3px;background:linear-gradient(155deg,#f0e3d0,#e4d3ba);clip-path:polygon(0 0,50% 57%,100% 0,100% 100%,0 100%);z-index:4}
+.envelope-front:after{content:"";position:absolute;inset:0;background:linear-gradient(35deg,transparent 49.6%,rgba(160,124,90,.18) 50%,transparent 50.4%),linear-gradient(-35deg,transparent 49.6%,rgba(160,124,90,.15) 50%,transparent 50.4%)}
+.envelope-flap{position:absolute;inset:0;clip-path:polygon(0 0,100% 0,50% 61%);background:linear-gradient(165deg,#f5e9d9,#e8d7be);transform-origin:top center;z-index:6;transition:transform .8s ease,z-index .01s .35s}
+.wax-seal{position:absolute;left:50%;top:55%;transform:translate(-50%,-50%) rotate(5deg);width:42px;height:42px;background:radial-gradient(circle at 32% 24%,#a4525c,#74363f 72%);border:2px solid #a46469;outline:1px solid rgba(92,29,46,.4);border-radius:48% 50% 46% 49%;box-shadow:1px 3px 5px #592e4138;display:grid;place-items:center;z-index:7;transition:transform .35s,opacity .35s}
+.wax-seal svg{width:17px;color:#e5bfa0;opacity:.9}
+.envelope-name{position:absolute;bottom:16px;left:0;right:0;z-index:5;font-family:var(--hand);font-size:21px;color:#8c7162;transform:rotate(5deg)}
+.gift-signature{font-size:7px;letter-spacing:2px;margin:26px 0 0;color:#b09ba4}
+.letter-peek{position:absolute;left:7%;top:6%;width:86%;height:89%;padding-top:18px;background:#fcf5e9;box-shadow:0 0 0 1px #d7bd94;z-index:2;transition:transform 1s .5s ease;text-align:center;font-family:var(--hand);color:#794b50;font-size:22px;line-height:1.2}
+.letter-peek:before{content:"";position:absolute;inset:8px;border:1px solid #d7b58266;pointer-events:none}
+.letter-peek span,.letter-peek strong,.letter-peek i{display:block;font-weight:400}
+.letter-peek strong{font-size:28px}
+.letter-peek i{font-family:var(--sans);font-size:6px;letter-spacing:2px;margin-top:12px;font-style:normal}
+.is-open .envelope-flap{transform:rotateX(180deg);z-index:1}
+.is-open .wax-seal{opacity:0;transform:translate(-50%,-50%) scale(.5)}
+.is-open .letter-peek{transform:translateY(-69%)}
+.orbit-decoration{position:absolute;left:65%;top:46%;width:310px;height:310px;border:1px solid rgba(216,176,119,.09);border-radius:50%;transform:translate(-50%,-50%);pointer-events:none}
+.orbit-decoration i{position:absolute;inset:-18px;border:1px dashed rgba(216,176,119,.1);border-radius:50%}
+.orbit-decoration span{position:absolute;top:29px;right:32px;font-size:20px;color:var(--gold);background:var(--bg)}
+.scene-spark{position:absolute;color:var(--gold);pointer-events:none;opacity:.55}
+.sparkle-a{left:44%;top:22%;font-size:13px}.sparkle-b{left:89%;top:70%;font-size:28px}
+#shot-canvas{position:absolute;inset:0;width:100%;height:100%;z-index:6;pointer-events:none}
+.game-controls{text-align:center;padding:1px 20px 0}
+.game-help{font-family:var(--serif);font-size:23px;margin:0 0 4px;font-style:italic}
+.game-detail{color:var(--muted);font-size:10px;margin:0 0 18px}
+.button{display:inline-flex;align-items:center;justify-content:center;gap:14px;border-radius:var(--radius);padding:14px 26px;border:1px solid transparent;font-size:11px;font-weight:500;letter-spacing:.2px;min-height:48px;transition:background .2s,transform .2s,box-shadow .2s}
+.button svg{width:18px;height:18px}
+.button-gold{background:#dfc193;color:#3f2930;border-color:#ebcd9b;box-shadow:0 5px 20px rgba(10,6,12,.1)}
+.button-gold:hover{background:#edd3aa;box-shadow:0 5px 20px rgba(217,183,124,.1)}
+.button-gold:active{transform:translateY(2px)}
+.button-icon{font-size:20px;line-height:1}
+.hold-button{user-select:none;-webkit-user-select:none;touch-action:none;min-width:248px}
+.power-meter{height:3px;width:210px;background:#ffffff0e;margin:10px auto 0;border-radius:3px;overflow:hidden}
+.power-meter div{height:100%;width:0%;background:var(--gold);border-radius:3px}
+.game-status{font-size:9px;color:var(--muted);min-height:18px;margin:10px 0 9px}
+.text-button{display:inline-flex;align-items:center;justify-content:center;gap:10px;color:var(--gold);background:none;border:0;padding:10px 4px;min-height:44px;font-size:11px;transition:color .2s}
+.text-button:hover{color:#f6ddba}
+.text-button svg{width:15px;height:15px}
+.skip-game{font-size:9px;color:#a18e9a;min-height:36px}
+.chapter-mark{font-size:7px;letter-spacing:2px;display:flex;align-items:center;justify-content:center;gap:15px;color:#9c8793;margin:28px 0 30px}
+.chapter-mark span{width:40px;height:1px;background:var(--line)}
+.site-footer{max-width:1196px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding:21px 24px;color:#a08c98;font-size:8px;letter-spacing:.5px}
+.site-footer span:last-child{display:flex;align-items:center;gap:6px}
+.site-footer svg{width:9px;color:#c38d9a}
+.site-footer strong{font-weight:500;color:#c1a8b0;font-size:8px}
+.birthday-panel{text-align:center;padding:10px 20px 20px;animation:rise-in .8s both}
+.birthday-panel .eyebrow{font-size:8px;letter-spacing:1.5px}
+.birthday-panel h2{font-family:var(--serif);font-size:42px;line-height:1.1;font-weight:400;margin:12px 0}
+.birthday-panel h2 em{display:block}
+.birthday-panel p:not(.eyebrow){font-size:12px;color:var(--muted)}
+.birthday-panel .button{margin:15px 0 5px}
+.replay{display:flex;margin:auto;font-size:10px;color:var(--muted)}
+@keyframes rise-in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.noscript-note{text-align:center;margin:20px;padding:15px;border:1px solid var(--line);color:var(--gold)}
+.letters-main{max-width:1120px;margin:auto;padding:0 35px}
+.letters-hero{padding-top:60px;padding-bottom:42px}
+.letters-hero h1,.hearts-hero h1{font-size:clamp(48px,5.4vw,74px)}
+.hero-ornament{display:flex;justify-content:center;align-items:center;gap:15px;margin:24px 0 0;color:var(--gold)}
+.hero-ornament svg{width:13px;opacity:.65}
+.hero-ornament span{height:1px;width:53px;background:var(--line)}
+.letters-grid{display:grid;grid-template-columns:1fr 1fr;gap:33px;align-items:start}
+.letter-card{color:var(--ink);background:var(--paper);background-image:repeating-linear-gradient(0deg,transparent,transparent 31px,#8b655003 31px,#8b655003 32px);padding:30px 34px 20px;border-radius:2px;box-shadow:0 13px 35px #0002;position:relative;transform:rotate(-.7deg)}
+.letter-card:nth-child(2n){transform:rotate(.8deg);margin-top:28px}
+.letter-card:nth-child(3){transform:rotate(.5deg)}
+.letter-card:before{content:"";position:absolute;inset:9px;border:1px solid #9872471c;pointer-events:none}
+.letter-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;color:#977558;font-size:8px;letter-spacing:1.7px}
+.tone-tag{font-family:var(--serif);font-size:15px;font-style:italic;letter-spacing:.3px;color:#977166}
+.letter-card h2{font-family:var(--serif);font-size:34px;line-height:1.1;font-weight:500;margin:21px 0 18px;color:#6b424a;letter-spacing:-.5px}
+.letter-writing{font-family:var(--hand);font-size:22px;line-height:1.38}
+.letter-writing p{margin:0 0 16px}
+.letter-writing .salutation{color:#8f4a55;font-size:24px}
+.letter-sign{position:relative;padding-top:6px;line-height:1.15}
+.letter-sign strong{font-size:31px;font-weight:600;display:inline-block;margin:7px 0 5px;color:#864450}
+.hand-heart{display:inline-block;font-size:34px;color:#ad6e77;margin-left:25px;transform:rotate(-15deg)}
+.letter-bottom{display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid #846d5726;padding-top:11px;margin-top:22px}
+.letter-bottom>span{font-size:8px;color:#917561;white-space:nowrap}
+.playlist-toggle{display:flex;align-items:center;gap:7px;background:transparent;border:1px solid #99645230;border-radius:30px;color:#875259;padding:9px 12px;min-height:40px;font-size:9px}
+.playlist-toggle:hover{background:#9c66570a}
+.playlist-toggle:focus-visible{outline-color:#7c4354}
+.playlist-toggle>span:first-child{font-size:17px}
+.toggle-plus{font-size:14px;width:12px;text-align:center}
+.playlist-panel{margin-top:18px;border-top:1px solid #98724726;padding-top:16px}
+.playlist-notice{font-family:var(--sans);font-size:10px;line-height:1.6;color:#826d61;margin:0 0 15px}
+.track-list{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.track{padding:10px;background:#e8decc66;border:1px solid #8d665416;border-radius:4px}
+.track-heading{display:flex;gap:10px;align-items:center;margin:0 0 8px}
+.track-index{font-size:9px;color:#a28a6c}
+.track-title{font-size:10px;color:#5c4241;line-height:1.5}
+.track-title span{display:block;font-size:9px;color:#937a6b}
+.track audio{display:block;width:100%;height:34px}
+.track.is-playing{border-color:#a97972;background:#e4cfbd88}
+.audio-error{font-size:10px;color:#9a394c;line-height:1.5;margin:8px 0 0}
+.page-navigation{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:52px 0 24px;padding:0 4px}
+.back-link{color:var(--muted)}
+.letters-main .chapter-mark{margin-bottom:38px}
+.reveal.js-reveal{opacity:0;translate:0 20px;transition:opacity .65s ease,translate .65s ease}
+.reveal.is-visible{opacity:1;translate:0 0}
+.hearts-main{max-width:1130px;margin:auto;padding:0 30px}
+.hearts-hero{padding-bottom:30px}
+.heart-garden{height:460px;position:relative;overflow:hidden;isolation:isolate;border-radius:180px;border:1px solid var(--line);background:radial-gradient(ellipse at 50% 45%,#76475d20,transparent 66%)}
+.garden-halo{position:absolute;left:50%;top:50%;width:74%;height:86%;transform:translate(-50%,-50%) rotate(-9deg);border:1px solid #d8b1760c;border-radius:50%;pointer-events:none}
+.garden-halo:before,.garden-halo:after{content:"";position:absolute;inset:25px -25px;border:1px solid #d8b1760e;border-radius:50%}
+.garden-halo:after{inset:65px -55px;transform:rotate(24deg);border-style:dashed}
+.garden-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;pointer-events:none;opacity:.65}
+.garden-center span{font-family:var(--serif);font-size:66px;font-style:italic;color:#d9b77c73}
+.garden-center p{font-family:var(--hand);font-size:18px;color:#b19aa8;margin:0}
+.heart-layer,.heart-notes,#heart-canvas{position:absolute;inset:0;width:100%;height:100%}
+.heart-layer{z-index:3}.heart-notes{z-index:5;pointer-events:none}#heart-canvas{z-index:4;pointer-events:none}
+.floating-heart{position:absolute;left:0;top:0;display:grid;place-items:center;background:none;border:0;padding:0;width:48px;height:48px;will-change:transform;touch-action:manipulation}
+.floating-heart svg{width:var(--heart-size);height:var(--heart-size);color:var(--heart-color);filter:drop-shadow(0 4px 9px #0002);transition:scale .2s,opacity .15s}
+.floating-heart:hover svg,.floating-heart:focus-visible svg{scale:1.22}
+.floating-heart:focus-visible{outline-offset:-2px;border-radius:50%;background:#fff1}
+.floating-heart.is-popping svg{scale:1.6;opacity:0}
+.garden-label{position:absolute;bottom:24px;left:20px;right:20px;text-align:center;color:#b59aab;font-size:7px;letter-spacing:2px;pointer-events:none;z-index:1}
+.garden-label span{margin-right:8px;color:var(--gold)}
+.heart-note{position:absolute;width:240px;padding:18px 19px;border:1px solid #d6b78966;border-radius:4px;background:#f3e9db;box-shadow:0 12px 30px #110b194d;text-align:center;animation:note-in .3s ease both;color:#69434c;font-family:var(--hand);font-size:25px;line-height:1.2}
+.heart-note:before{content:"♡";display:block;font-family:var(--serif);font-size:20px;color:#ab6a75;margin-bottom:6px}
+.heart-note.is-leaving{opacity:0;translate:0 -12px;transition:opacity .35s,translate .35s}
+@keyframes note-in{from{opacity:0;translate:0 10px;scale:.95}to{opacity:1;translate:0 0;scale:1}}
+.garden-info{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:14px 20px;color:#a992a3;font-size:10px}
+.garden-info p{margin:0}
+#heart-count{color:var(--gold);font-size:17px;font-family:var(--serif);margin-right:5px}
+.garden-info .text-button{font-size:9px;color:var(--muted)}
+.closing-note{text-align:center;padding:52px 10px 12px}
+.closing-note .eyebrow{font-size:8px;letter-spacing:1.8px}
+.closing-words{font-family:var(--serif);font-size:40px;line-height:1.12;margin:0 0 21px;font-style:italic}
+.closing-signature{font-family:var(--hand);font-size:22px;color:var(--gold)}
+.hearts-main .page-navigation{margin:25px 0 36px}
+
+/* Mobile : mêmes contrôles Pointer Events au doigt et à la souris. */
+@media(max-width:900px){
+.site-header{padding:22px 25px;gap:12px}.header-date{display:none}.main-nav a{padding:9px 12px}
+.game-scene{height:315px}.amber-wrap{left:5%;width:146px}.bow-control{left:23%;top:54%}.envelope-target{width:240px}.envelope{width:240px;height:151px}
+.letters-grid{gap:22px}.letter-card{padding:26px 25px 18px}.letter-writing{font-size:21px}.letter-card h2{font-size:30px}
+.letter-bottom{flex-wrap:wrap}.playlist-toggle{margin-left:auto}.heart-garden{height:440px}
+}
+@media(max-width:620px){
+.site-header{padding:19px 19px 15px;flex-wrap:wrap;justify-content:center;gap:17px}.brand{font-size:26px}.brand-symbol{width:29px;height:29px}
+.main-nav{width:100%;justify-content:center;gap:3px}.main-nav a{padding:9px 13px;font-size:10px}.nav-number{font-size:8px}
+.hero{padding:38px 18px 5px}h1{font-size:57px;letter-spacing:-1.3px}.eyebrow{font-size:8px;letter-spacing:1.6px;margin-bottom:18px}
+.hero-description{font-size:11px;line-height:1.9}.home-main{background-size:850px auto;background-position:center 95px}
+.game-scene{height:294px;margin:0 10px}.amber-wrap{left:-1%;bottom:20px;width:118px}.amber-label{font-size:7px;letter-spacing:1.5px}.amber-label i{font-size:11px}
+.bow-control{width:62px;height:140px;left:26%;top:55%}
+.envelope-target{left:67%;top:44%;width:184px}.envelope{width:184px;height:119px}.gift-caption{font-size:6px;letter-spacing:1.6px;margin-bottom:23px}
+.gift-signature{font-size:6px;letter-spacing:1.3px;margin-top:21px}.envelope-name{font-size:19px;bottom:9px}
+.wax-seal{width:34px;height:34px}.wax-seal svg{width:13px}
+.letter-peek{padding-top:13px;font-size:18px}.letter-peek strong{font-size:22px}.letter-peek i{font-size:5px;margin-top:8px}
+.orbit-decoration{left:67%;top:44%;width:229px;height:229px}.orbit-decoration i{inset:-11px}.orbit-decoration span{top:20px;right:27px;font-size:17px}
+.sparkle-a{left:27%;top:15%;font-size:10px}.sparkle-b{left:88%;top:81%;font-size:18px}
+.game-help{font-size:23px}.game-detail{font-size:9px;max-width:270px;margin:5px auto 16px}.game-controls{padding-top:7px}
+.hold-button{min-width:238px}.chapter-mark{margin:21px 0 23px}
+.site-footer{margin:0 20px;padding:20px 0;flex-direction:column;gap:7px;font-size:8px}
+.birthday-panel h2{font-size:35px}.birthday-panel p:not(.eyebrow){font-size:11px}
+.letters-main,.hearts-main{padding:0 19px}
+.letters-hero{padding-top:38px;padding-bottom:32px}.letters-hero h1,.hearts-hero h1{font-size:54px}
+.letters-grid{grid-template-columns:1fr;gap:24px;padding:0 4px}
+.letter-card,.letter-card:nth-child(2n){margin-top:0;padding:27px 26px 19px}.letter-card h2{font-size:34px}
+.letter-writing{font-size:22px;line-height:1.42}.letter-meta{font-size:8px}
+.letter-bottom{flex-wrap:nowrap}.playlist-toggle{font-size:9px;gap:6px;padding:8px 10px}
+.page-navigation{margin-top:35px;gap:10px}.page-navigation .button{padding:13px 17px;font-size:10px}.page-navigation .text-button{font-size:10px}
+.hearts-hero{padding-bottom:25px}.heart-garden{height:415px;border-radius:130px;overflow:hidden}
+.garden-center span{font-size:52px}.garden-center p{font-size:16px;white-space:nowrap}
+.garden-info{padding:13px 0;gap:6px;font-size:9px}.garden-info .text-button{font-size:8px;padding:10px 0}
+.garden-label{letter-spacing:1px;font-size:6px;bottom:30px}
+.closing-note{padding-top:35px}.closing-note .eyebrow{font-size:7px;letter-spacing:1px}.closing-words{font-size:34px}
+.heart-note{width:220px;font-size:24px}
+}
+@media(max-width:360px){
+h1{font-size:51px}.main-nav a{padding:8px 10px}.envelope-target{width:165px;left:68%}.envelope{width:165px;height:110px}
+.amber-wrap{width:105px}.bow-control{width:54px}.orbit-decoration{width:195px;height:195px}
+.letter-card,.letter-card:nth-child(2n){padding:25px 21px 17px}.letter-writing{font-size:21px}.playlist-toggle{font-size:8px;padding:8px}.letter-bottom>span{font-size:7px}
+.garden-info{flex-direction:column;gap:0}.letters-hero h1,.hearts-hero h1{font-size:49px}
+}
+/* Accessibilité : le jeu reste fonctionnel, mais les animations décoratives s'arrêtent. */
+@media(prefers-reduced-motion:reduce){
+html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+.star{animation:none}.reveal.js-reveal{opacity:1;translate:0 0}.floating-heart svg{transition:none}.letter-peek{transition-delay:0s}
+}
+
+/* Étoiles dessinées : aucun glyphe spécial requis dans la police. */
+.tiny-star svg{display:inline-block;width:12px;height:12px;vertical-align:-2px;color:var(--gold)}
+.orbit-decoration span svg{width:20px;height:20px}
+.scene-spark svg{width:100%;height:100%}
+.sparkle-a{width:13px;height:13px}.sparkle-b{width:26px;height:26px}
+.garden-label>span svg{display:inline-block;width:10px;height:10px;vertical-align:-2px}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#261822">
+<meta name="description" content="Un cadeau d'anniversaire pour DANTOU, imaginé avec amour par HASSANE. 7 novembre 2026.">
+<title>Une surprise dans les étoiles · Pour Dantou</title>
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/common.js" defer></script>
+
+<script src="js/index.js" defer></script>
+</head>
+<body class="page-index">
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="stars" aria-hidden="true"></div>
+<header class="site-header">
+<a class="brand" href="index.html" aria-label="Pour Dantou — accueil"><span class="brand-symbol"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" stroke="currentColor" stroke-width="1.2"/></svg></span><span>Pour Dantou<span class="brand-dot">.</span></span></a>
+<nav class="main-nav" aria-label="Les trois chapitres">
+<a href="index.html" aria-current="page" ><span class="nav-number">01</span> La surprise</a><a href="lettres.html" ><span class="nav-number">02</span> Les lettres</a><a href="coeurs.html" ><span class="nav-number">03</span> Les cœurs</a>
+</nav>
+<span class="header-date">07 NOV. 2026</span>
+</header>
+<main id="contenu" class="home-main">
+<section class="hero intro-home" aria-labelledby="home-title">
+<p class="eyebrow"><span class="tiny-star"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" stroke="currentColor" stroke-width="1.2"/></svg></span> LE 7 NOVEMBRE 2026 · TON JOUR À TOI</p>
+<h1 id="home-title">Un peu de magie.<br>Beaucoup de <em>toi.</em></h1>
+<p class="hero-description">DANTOU, il y a des mots qui méritent un petit voyage.<br><span>Celui-ci commence par une flèche, et finit par nous.</span></p>
+</section>
+<section class="shooting-game" aria-label="Ouvre ton cadeau avec l'arc d'Amber">
+<div class="game-scene" id="game-scene">
+<div class="orbit-decoration" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" stroke="currentColor" stroke-width="1.2"/></svg></span><i></i></div>
+<div class="amber-wrap"><img src="assets/img/amber.svg" alt="Amber, notre archère au ruban rouge" width="220" height="310" draggable="false"><span class="amber-label">AMBER <i>l'archère du cœur</i></span></div>
+<button class="bow-control" id="bow-control" type="button" aria-label="Arc : maintenir ou glisser vers la gauche, puis relâcher pour tirer. Flèches haut et bas pour viser au clavier." aria-describedby="game-help">
+<svg viewBox="0 0 80 180" aria-hidden="true"><path class="bow-limb" d="M24 12Q87 90 24 168" fill="none" stroke="#dcba80" stroke-width="4" stroke-linecap="round"/><path d="M24 12L19 5M24 168l-5 7" stroke="#c79661" stroke-width="4" stroke-linecap="round"/><polyline id="bow-string" points="24,12 24,90 24,168" fill="none" stroke="#f1e3cc" stroke-width="1.3"/><path d="M57 78v24" stroke="#773f3c" stroke-width="7" stroke-linecap="round"/></svg>
+</button>
+<div class="envelope-target" id="envelope-target">
+<p class="gift-caption">UNE SURPRISE T'ATTEND</p>
+<div class="envelope" id="envelope" role="img" aria-label="Une enveloppe fermée, adressée à Dantou">
+<div class="envelope-back"></div>
+<div class="letter-peek"><span>Pour toi,</span><strong>mon amour.</strong><i>— HASSANE</i></div>
+<div class="envelope-front"></div>
+<div class="envelope-flap"></div>
+<div class="wax-seal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C8 18 2 14 2 8a5.2 5.2 0 0 1 10-2 5.2 5.2 0 0 1 10 2c0 6-6 10-10 13Z" fill="currentColor"/></svg></div>
+<span class="envelope-name">Dantou</span>
+</div>
+<p class="gift-signature">DE HASSANE, AVEC AMOUR</p>
+</div>
+<canvas id="shot-canvas" aria-hidden="true"></canvas>
+<span class="scene-spark sparkle-a" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" stroke="currentColor" stroke-width="1.2"/></svg></span><span class="scene-spark sparkle-b" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z" stroke="currentColor" stroke-width="1.2"/></svg></span>
+</div>
+<div class="game-controls" id="game-controls">
+<p id="game-help" class="game-help">Une flèche pour ouvrir mon cœur.</p>
+<p class="game-detail">Glisse l'arc vers la gauche, puis relâche. Ou utilise le bouton ci-dessous.</p>
+<button type="button" class="button button-gold hold-button" id="shoot-button"><span class="button-icon">↗</span><span id="shoot-label">Maintenir pour bander</span></button>
+<div class="power-meter" role="meter" id="power-meter" aria-label="Puissance de l'arc" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="power-fill"></div></div>
+<p class="game-status" id="game-status" role="status">Vise le sceau. Le reste, c'est de la magie.</p>
+<button class="text-button skip-game" id="skip-game" type="button">Ouvrir sans jouer <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+<div class="birthday-panel" id="birthday-panel" hidden>
+<p class="eyebrow">AUJOURD'HUI, TOUTES LES ÉTOILES SONT POUR TOI</p>
+<h2>Joyeux anniversaire <em>DANTOU !</em></h2>
+<p>Que cette nouvelle année te ressemble : belle, lumineuse, irremplaçable.</p>
+<a class="button button-gold" href="lettres.html">Continuer <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<button class="text-button replay" id="replay" type="button">Rejouer la surprise</button>
+</div>
+</section>
+<p class="chapter-mark"><span></span> CHAPITRE 01 / 03 <span></span></p>
+<noscript><p class="noscript-note">Active JavaScript pour tirer à l'arc. <a href="lettres.html">Tu peux aussi lire les lettres directement.</a></p></noscript>
+</main>
+<footer class="site-footer"><span>Un petit univers, rien que pour toi.</span><span>Fait avec <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C8 18 2 14 2 8a5.2 5.2 0 0 1 10-2 5.2 5.2 0 0 1 10 2c0 6-6 10-10 13Z" fill="currentColor"/></svg> par <strong>HASSANE</strong></span></footer></body></html>

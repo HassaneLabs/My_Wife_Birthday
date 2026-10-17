@@ -1,0 +1,12 @@
+Place ici tes 8 fichiers MP3 autorisés :
+01-notre-chanson.mp3
+02-ton-sourire.mp3
+03-tout-doucement.mp3
+04-toi-et-moi.mp3
+05-souvenirs.mp3
+06-etoiles.mp3
+07-demain.mp3
+08-je-taime.mp3
+
+Tu peux utiliser d'autres noms : modifie simplement fichier dans js/musiques.js.
+Les titres et artistes sont des emplacements, pas des chansons livrées.
